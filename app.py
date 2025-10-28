@@ -116,6 +116,14 @@ def load_logo_from_file(path="logo_kariadi.png"):
 
 logo_img = load_logo_from_file()
 
+if logo_img is not None:
+    st.image(logo_img, width=96)   # ← ganti dari use_container_width
+else:
+    up = st.file_uploader("Unggah logo RS Kariadi (PNG)", type=["png"], label_visibility="collapsed")
+    if up is not None:
+        logo_img = Image.open(up)
+        st.image(logo_img, width=96)
+
 col_header = st.container()
 with col_header:
     st.markdown("<div class='header-bar'>", unsafe_allow_html=True)
