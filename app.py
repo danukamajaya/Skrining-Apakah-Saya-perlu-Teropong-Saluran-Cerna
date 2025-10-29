@@ -38,9 +38,10 @@ h1 { font-weight:800; }
 h2, h3 { font-weight:700; }
 
 /* Header pusat: logo di atas judul */
-.header-center { text-align: center; }
-.header-center {
-  text-align: center;
+.header-center { text-align: center; margin-top: 40px; margin-bottom: 16px; }
+
+.header-center [data-testid="stImage"] {
+  display: inline-block;      /* biar bisa center di text-align */
 }
 
 .header-center {
