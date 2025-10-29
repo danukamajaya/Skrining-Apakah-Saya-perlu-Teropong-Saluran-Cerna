@@ -128,7 +128,7 @@ c_il_1, c_il_2 = st.columns([1,1], vertical_alignment="center")
 with c_il_1:
     if egd_img:
         st.markdown("<div class='illustration-wrap'>", unsafe_allow_html=True)
-        st.image(egd_img, use_container_width=True)
+        st.image(egd_img, use_container_width=200)
         st.markdown("<div class='illustration-cap'>Skema endoskopi saluran cerna atas (EGD)</div>", unsafe_allow_html=True)
         st.markdown("</div>", unsafe_allow_html=True)
 with c_il_2:
@@ -173,7 +173,7 @@ OTHER_EGD = [
     "Kontrol endoskopi pasca terapi (ulkus/varises/polipektomi) sesuai anjuran dokter",
 ]
 
-with st.expander("🔼 Apakah Saya perlu teropong saluran cerna **atas (EGD)** ?", expanded=False):
+with st.expander("Apakah Saya perlu teropong saluran cerna **atas (EGD)** ?", expanded=False):
     e1, e2, e3 = st.columns(3)
     egd_alarm_sel, egd_risk_sel, egd_other_sel = [], [], []
 
@@ -220,7 +220,7 @@ OTHER_COLO = [
     "Skrining polip/CRC **elektif** sesuai usia/risiko",
 ]
 
-with st.expander("🔽 Apakah Saya perlu teropong saluran cerna **bawah (Kolonoskopi)** ?", expanded=False):
+with st.expander("Apakah Saya perlu teropong saluran cerna **bawah (Kolonoskopi)** ?", expanded=False):
     c1, c2, c3 = st.columns(3)
     colo_alarm_sel, colo_risk_sel, colo_other_sel = [], [], []
 
