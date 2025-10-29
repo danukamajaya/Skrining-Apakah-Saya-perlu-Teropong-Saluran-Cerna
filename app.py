@@ -51,7 +51,7 @@ h2, h3 { font-weight:700; }
 
 .header-center img {
   display: inline-block;      /* supaya bisa di-center di dalam text-align */
-  max-height: 45px;           /* 🔽 perkecil ukuran logo */
+  max-height: 20px;           /* 🔽 perkecil ukuran logo */
   width: auto;                /* jaga proporsi lebar/tinggi */
   margin-top: 10px;           /* beri jarak sedikit dari atas container */
   margin-bottom: 8px;         /* jarak dari teks judul */
@@ -106,7 +106,7 @@ colo_img  = pick_first_existing(["ilustrasi_colonoscopy.png", "colonoscopy.png"]
 with st.container():
     st.markdown("<div class='header-center'>", unsafe_allow_html=True)
     if logo_path:
-        st.image(logo_path, use_container_width=100)
+        st.image(logo_path)
     st.markdown(
         """
         <div class="title-text">
