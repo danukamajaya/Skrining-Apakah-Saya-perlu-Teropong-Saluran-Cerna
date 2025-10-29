@@ -91,7 +91,6 @@ h2, h3 { font-weight:700; }
 
 /* Responsif HP */
 @media (max-width: 768px){
-  .header-center img { max-height: 72px; }
   .title-text h1 { font-size: 1.9rem !important; }
 }
 </style>
