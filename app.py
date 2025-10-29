@@ -43,13 +43,18 @@ h2, h3 { font-weight:700; }
   text-align: center;
 }
 
+.header-center {
+  text-align: center;
+  margin-top: 25px;           /* 👉 beri jarak dari tepi atas halaman */
+  margin-bottom: 12px;        /* beri sedikit jarak ke bawah */
+}
+
 .header-center img {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 30px;          /* turunkan sedikit */
-  max-height: 55px;          /* 🔽 perkecil ukuran logo */
-  width: auto;               /* jaga proporsi */
+  display: inline-block;      /* supaya bisa di-center di dalam text-align */
+  max-height: 45px;           /* 🔽 perkecil ukuran logo */
+  width: auto;                /* jaga proporsi lebar/tinggi */
+  margin-top: 10px;           /* beri jarak sedikit dari atas container */
+  margin-bottom: 8px;         /* jarak dari teks judul */
 }
 
 /* Kartu hasil */
