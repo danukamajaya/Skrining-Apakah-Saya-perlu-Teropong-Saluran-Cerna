@@ -38,26 +38,30 @@ h1 { font-weight:800; }
 h2, h3 { font-weight:700; }
 
 /* Header pusat: logo di atas judul */
-.header-center {
-  display: flex !important;            /* gunakan flexbox */
-  justify-content: center !important;  /* center horizontal */
-  align-items: center !important;      /* center vertikal di container */
-  flex-direction: column !important;   /* logo di atas teks */
-  margin-top: 40px !important;         /* beri jarak dari tepi atas */
-  margin-bottom: 20px !important;
-}
-
-.header-center [data-testid="stImage"] {
-  display: flex !important;
-  justify-content: center !important;
-  width: 100% !important;
-}
-
-.header-center [data-testid="stImage"] img {
+/* Pusatkan kontainer gambar Streamlit di header */
+.header-center div[data-testid="stImage"]{
   display: block !important;
+  width: max-content !important;   /* sekecil kontennya */
+  margin-left: auto !important;
+  margin-right: auto !important;   /* -> center */
+}
+
+/* Pastikan img proporsional & tidak melebar */
+.header-center div[data-testid="stImage"] img{
+  display: block !important;
+  height: auto !important;
+  width: auto !important;          /* hormati width=120 dari st.image */
   margin: 0 auto !important;
-  max-height: 55px !important;   /* ubah nilai ini untuk ukuran logo */
-  width: auto !important;
+}
+
+/* Beri jarak aman atas-bawah header */
+.header-center{
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: center !important;
+  justify-content: center !important;
+  margin-top: 40px !important;     /* bisa dinaikkan ke 60 kalau masih mepet atas */
+  margin-bottom: 20px !important;
 }
 
 /* Kartu hasil */
