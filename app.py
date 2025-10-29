@@ -39,7 +39,7 @@ h2, h3 { font-weight:700; }
 
 /* Header pusat: logo di atas judul */
 .header-center { text-align: center; }
-.header-center img { max-height: 88px; margin-bottom: 30px; }
+.header-center img { max-height: 100px; margin-bottom: 30px; }
 
 /* Kartu hasil */
 .result-card {
