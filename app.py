@@ -47,7 +47,7 @@ h2, h3 { font-weight:700; }
   display: block;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 10px;          /* turunkan sedikit */
+  margin-top: 30px;          /* turunkan sedikit */
   max-height: 55px;          /* 🔽 perkecil ukuran logo */
   width: auto;               /* jaga proporsi */
 }
