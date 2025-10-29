@@ -106,7 +106,7 @@ colo_img  = pick_first_existing(["ilustrasi_colonoscopy.png", "colonoscopy.png"]
 with st.container():
     st.markdown("<div class='header-center'>", unsafe_allow_html=True)
     if logo_path:
-        st.image(logo_path)
+        st.image(logo_path, width=120)
     st.markdown(
         """
         <div class="title-text">
