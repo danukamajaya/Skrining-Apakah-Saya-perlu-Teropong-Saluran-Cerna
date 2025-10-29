@@ -38,24 +38,26 @@ h1 { font-weight:800; }
 h2, h3 { font-weight:700; }
 
 /* Header pusat: logo di atas judul */
-.header-center { text-align: center; margin-top: 40px; margin-bottom: 16px; }
+.header-center {
+  display: flex !important;            /* gunakan flexbox */
+  justify-content: center !important;  /* center horizontal */
+  align-items: center !important;      /* center vertikal di container */
+  flex-direction: column !important;   /* logo di atas teks */
+  margin-top: 40px !important;         /* beri jarak dari tepi atas */
+  margin-bottom: 20px !important;
+}
 
 .header-center [data-testid="stImage"] {
-  display: inline-block;      /* biar bisa center di text-align */
+  display: flex !important;
+  justify-content: center !important;
+  width: 100% !important;
 }
 
-.header-center {
-  text-align: center;
-  margin-top: 40px;           /* 👉 beri jarak dari tepi atas halaman */
-  margin-bottom: 12px;        /* beri sedikit jarak ke bawah */
-}
-
-.header-center img {
-  display: inline-block;      /* supaya bisa di-center di dalam text-align */
-  max-height: 20px;           /* 🔽 perkecil ukuran logo */
-  width: auto;                /* jaga proporsi lebar/tinggi */
-  margin-top: 10px;           /* beri jarak sedikit dari atas container */
-  margin-bottom: 8px;         /* jarak dari teks judul */
+.header-center [data-testid="stImage"] img {
+  display: block !important;
+  margin: 0 auto !important;
+  max-height: 55px !important;   /* ubah nilai ini untuk ukuran logo */
+  width: auto !important;
 }
 
 /* Kartu hasil */
