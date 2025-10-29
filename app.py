@@ -38,30 +38,31 @@ h1 { font-weight:800; }
 h2, h3 { font-weight:700; }
 
 /* Header pusat: logo di atas judul */
-/* Pusatkan kontainer gambar Streamlit di header */
-.header-center div[data-testid="stImage"]{
-  display: block !important;
-  width: max-content !important;   /* sekecil kontennya */
-  margin-left: auto !important;
-  margin-right: auto !important;   /* -> center */
-}
-
-/* Pastikan img proporsional & tidak melebar */
-.header-center div[data-testid="stImage"] img{
-  display: block !important;
-  height: auto !important;
-  width: auto !important;          /* hormati width=120 dari st.image */
-  margin: 0 auto !important;
-}
-
-/* Beri jarak aman atas-bawah header */
-.header-center{
+/* ====== Logo RS Kariadi benar-benar di tengah ====== */
+.header-center {
   display: flex !important;
   flex-direction: column !important;
-  align-items: center !important;
   justify-content: center !important;
-  margin-top: 40px !important;     /* bisa dinaikkan ke 60 kalau masih mepet atas */
+  align-items: center !important;
+  text-align: center !important;
+  margin-top: 50px !important;     /* agar turun dari tepi atas */
   margin-bottom: 20px !important;
+}
+
+/* Bungkus elemen gambar Streamlit */
+.header-center div[data-testid="stImage"] {
+  text-align: center !important;   /* paksa center horizontal */
+  width: 100% !important;
+  margin: 0 auto !important;
+  display: block !important;
+}
+
+/* Gambar logo */
+.header-center div[data-testid="stImage"] img {
+  display: inline-block !important;
+  width: 120px !important;         /* ubah 100–140 px sesuai kebutuhan */
+  height: auto !important;
+  margin: 0 auto !important;
 }
 
 /* Kartu hasil */
