@@ -45,7 +45,7 @@ h2, h3 { font-weight:700; }
 
 .header-center {
   text-align: center;
-  margin-top: 25px;           /* 👉 beri jarak dari tepi atas halaman */
+  margin-top: 40px;           /* 👉 beri jarak dari tepi atas halaman */
   margin-bottom: 12px;        /* beri sedikit jarak ke bawah */
 }
 
